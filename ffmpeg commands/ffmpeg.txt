@@ -1,0 +1,14 @@
+1. Convert a video file to H.265 format with a constant rate factor (CRF) of 28:
+	ffmpeg -i input.mp4 -c:v libx265 -crf 28 output.mp4
+
+2. Convert a video file to H.265 format with a target bitrate of 2 Mbps:
+	ffmpeg -i input.mp4 -c:v libx265 -b:v 2M output.mp4
+
+3. Convert a video file to H.265 format with a target resolution of 1280x720:
+	ffmpeg -i input.mp4 -c:v libx265 -vf scale=1280:720 output.mp4
+
+4. Extract a 30-second clip from a video file in H.265 format starting from the 1-minute mark:
+	ffmpeg -i input.mp4 -c:v libx265 -ss 00:01:00 -t 30 output.mp4
+
+5. Merge multiple H.265-encoded video files into a single output file:
+	ffmpeg -i input1.mp4 -i input2.mp4 -c:v libx265 -c:a copy -strict -2 output.mp4

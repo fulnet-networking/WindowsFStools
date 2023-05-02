@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+bulkRename.ps1 works and has all it requires for now, 
+im feeling like recreating in java for a little more flexability.
+
+Probably a bit more media stuff some got a new project :) 

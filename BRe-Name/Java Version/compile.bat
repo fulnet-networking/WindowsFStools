@@ -1,1 +1,1 @@
-javac bulkRenamer.java
+javac bulkRename.java
